@@ -3,9 +3,9 @@
 <html>
 
 <div class="html-content">
-
+    
     <head>
-        <title>Generic template</title>
+        <title>Gallery</title>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
         <link rel="stylesheet" href="assets/css/main.css" />
@@ -67,6 +67,8 @@
                         data-zoom-image="images/cmps-generic.jpg">
                         <br>
                         <button onclick="window.print();"> Save as PDF </button>
+                        <button id="search">Google Search</button>
+                        
                     </div>
             </div>
 
@@ -133,7 +135,10 @@
 <script>$("#zoom_01").elevateZoom()</script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.js"></script>
 <script>
-
+var q = "Testing google search";
+document.getElementById('search').onclick = function() {
+    window.open('http://google.com/search?q='+q);
+};
 </script>
 
 </body>
