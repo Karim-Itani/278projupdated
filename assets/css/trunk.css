@@ -1,0 +1,17 @@
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    display: inline-block;
+}
+
+input[type="checkbox"][id^="cb"] {
+    display: none;
+}
+.trunk_chackbox{margin-top: 40px;}
+.frui-size{margin-top: 40px;}
+.Crownshaftforpalms{margin-top: 40px;}
+.Crownshaft{margin-top: 40px;}
+.line{margin-top: 140px;}
