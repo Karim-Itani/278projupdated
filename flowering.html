@@ -60,8 +60,9 @@
         <div id="main">
             <div class="inner">
                 <h1>Flowering Plants</h1>
-                <p>Acacia dealbata (Mimosa, Silver Wattle)</p>
+                <p id="plantname">Acacia dealbata (Mimosa, Silver Wattle)</p>
                 <img src="https://landscapeplants.aub.edu.lb/Plants/Photo/bed76c93-ae18-4a74-8841-a85a1065e655/Plant" alt="">
+                <button id="search">Google Search</button>
 
             </div>
         </div>
@@ -120,6 +121,12 @@
     <script src="assets/js/breakpoints.min.js"></script>
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
+    <script>
+        var q = document.getElementById("plantname").innerHTML;
+        document.getElementById('search').onclick = function() {
+            window.open('http://google.com/search?q='+q);
+        };
+        </script>
 
 </body>
 

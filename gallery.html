@@ -66,7 +66,6 @@
                     <img class="hoverable" src="images/cmps-generic.jpg" id="zoom_01" data-zoom-image="images/cmps-generic.jpg">
                         <br>
                         <button onclick="window.print();"> Save as PDF </button>
-                        <button id="search">Google Search</button>
                         
                     </div>
             </div>
@@ -133,12 +132,7 @@
 <script src="assets/js/jquery.elevatezoom.min.js" type="text/javascript"></script>
 <script>$("#zoom_01").elevateZoom()</script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.js"></script>
-<script>
-var q = "Testing google search";
-document.getElementById('search').onclick = function() {
-    window.open('http://google.com/search?q='+q);
-};
-</script>
+
 
 </body>
 

@@ -60,8 +60,10 @@
         <div id="main">
             <div class="inner">
                 <h1>Plants For Shade</h1>
-                <p>Acalypha wilkesiana (Copperleaf, Jacob’s Coat, Fire dragon)</p>
+                <p id="plantname">Acalypha wilkesiana (Copperleaf, Jacob’s Coat, Fire dragon)</p>
                 <img src="https://landscapeplants.aub.edu.lb/Plants/Photo/2ae72d3c-2c7a-4646-81bb-e5488d11888a/Flower" alt="">
+                <button id="search">Google Search</button>
+
 
             </div>
         </div>
@@ -120,6 +122,12 @@
     <script src="assets/js/breakpoints.min.js"></script>
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
+    <script>
+        var q = document.getElementById("plantname").innerHTML;
+        document.getElementById('search').onclick = function() {
+            window.open('http://google.com/search?q='+q);
+        };
+        </script>
 
 </body>
 

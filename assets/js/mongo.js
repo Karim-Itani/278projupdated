@@ -101,8 +101,6 @@ async function createManyPlants(client, newPlantsarray) {
     console.log(result.insertedIds);
 }
 
-
-
 async function listDatabases(client) {
     const databasesList = await client.db().admin().listDatabases();
 
