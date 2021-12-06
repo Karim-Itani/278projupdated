@@ -60,8 +60,9 @@
         <div id="main">
             <div class="inner">
                 <h1>Fragrant Plants</h1>
-                <p>Chimonanthus praecox (Japanese Allspice, Wintersweet)</p>
+                <p class="plantname">Chimonanthus praecox (Japanese Allspice, Wintersweet)</p>
                 <img src="https://landscapeplants.aub.edu.lb/Plants/Photo/40344a8b-ae11-4eed-bafb-547263d65b89/Plant" alt="">
+                <button id="search">Google Search</button>
 
             </div>
         </div>
@@ -120,6 +121,12 @@
     <script src="assets/js/breakpoints.min.js"></script>
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
+    <script>
+        var q = document.getElementById("plantname").innerHTML;
+        document.getElementById('search').onclick = function() {
+            window.open('http://google.com/search?q='+q);
+        };
+        </script>
 
 </body>
 

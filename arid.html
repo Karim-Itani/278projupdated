@@ -26,7 +26,7 @@
                     <span class="symbol"><img src="images/logo.png" alt="" />
 					</span>
                     <span class="title">
-						<span class="header1">Landscape Design & Ecosystem Management</span><br>
+					<span class="header1">Landscape Design & Ecosystem Management</span><br>
                     <span class="header2">Faculty of Agriculture & Food Sciences</span><br>
                     <span class="header2">AUB Landscape Plant Database</span></span>
                 </a>
@@ -60,8 +60,9 @@
         <div id="main">
             <div class="inner">
                 <h1>Plants For arid regions</h1>
-                <p>Abutilon x hybridum (Flowering Maple)</p>
+                <p id="plantname">Abutilon x hybridum (Flowering Maple)</p>
                 <img src="https://landscapeplants.aub.edu.lb/Plants/Photo/667baa25-5bba-4608-a71f-36f0fe3f29be/Plant" alt="">
+                <button id="search">Google Search</button>
 
             </div>
         </div>
@@ -120,6 +121,12 @@
     <script src="assets/js/breakpoints.min.js"></script>
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
+    <script>
+        var q = document.getElementById("plantname").innerHTML;
+        document.getElementById('search').onclick = function() {
+            window.open('http://google.com/search?q='+q);
+        };
+        </script>
 
 </body>
 

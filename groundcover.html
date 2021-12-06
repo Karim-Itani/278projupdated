@@ -26,7 +26,7 @@
                     <span class="symbol"><img src="images/logo.png" alt="" />
 					</span>
                     <span class="title">
-						<span class="header1">Landscape Design & Ecosystem Management</span><br>
+					<span class="header1">Landscape Design & Ecosystem Management</span><br>
                     <span class="header2">Faculty of Agriculture & Food Sciences</span><br>
                     <span class="header2">AUB Landscape Plant Database</span></span>
                 </a>
@@ -60,8 +60,9 @@
         <div id="main">
             <div class="inner">
                 <h1>Ground Covers</h1>
-                <p>Latania lontaroides (Red Latan Palm)</p>
+                <p id="plantname">Latania lontaroides (Red Latan Palm)</p>
                 <img src="https://landscapeplants.aub.edu.lb/Plants/Photo/d758f862-05d0-4200-8047-9543d2a3981e/Plant" alt="">
+                <button id="search">Google Search</button>
 
             </div>
         </div>
@@ -120,7 +121,11 @@
     <script src="assets/js/breakpoints.min.js"></script>
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
-
+    <script>
+        var q = document.getElementById("plantname").innerHTML;
+        document.getElementById('search').onclick = function() {
+            window.open('http://google.com/search?q='+q);
+        };
+        </script>
 </body>
-
 </html>
